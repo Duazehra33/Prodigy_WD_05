@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: url('back.avif') no-repeat top center;
+    background-size:cover;
+ 
+  }h1 {
+    font-family: cursive;
+    color: rgba(255, 251, 252, 0.999);
+    margin-bottom: 20px;
+    -webkit-text-stroke: 1px whitesmoke;
+    text-shadow: 2px 4px 4px #8dadb8d7;
+       animation: strokeAnimation 2s infinite alternate; }
+
+@keyframes strokeAnimation {
+    0% {
+        -webkit-text-stroke: 2px rgba(239, 167, 195, 0.756);
+    }
+    100% {
+        -webkit-text-stroke: 2px rgba(60, 56, 60, 0.554); 
+     }
+}
+
+  
+  .container {
+    text-align: center;
+    margin: 40px auto;
+    width: 500px;
+    border: 1px solid #aeadad;
+    padding: 20px;
+  }
+  
+
+  
+  #cityInput {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0px 16px 0px 16px;
+    border-bottom: 3px solid gray;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  #cityInput:focus {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  
+  #getWeatherBtn {
+    background-color: #313131;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+  }
+  
+  #getWeatherBtn:hover {
+    background-color: #555;
+  }
+  
+  #weatherInfo {
+    margin-top: 20px;
+    color: #131111;
+  }
+  
